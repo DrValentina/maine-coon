@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!--<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-  <link rel="manifest" href="img/favicons/manifest.webmanifest">-->
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
   <title>Питомник Мейн-Кунов</title>
 </head>
 <body class="page">
   <header class="header page__header">
     <div class="header__logo">
-      <img class="header__img" src="" alt="Лого Питомник Мейн-Кунов">
+      <img class="header__img" src="img/svg/logo_crown.svg" alt="Лого Питомник Мейн-Кунов">
     </div>
 
     <div class="header-info header__info">
@@ -26,9 +26,9 @@
     </div>
 
     <div class="header-social header__social">
-      <a class="header-social__link header-social__vk" href="#"><img src="" alt="Вконтакте"></a>
-      <a class="header-social__link header-social__tw" href="#"><img src="" alt="Твиттер"></a>
-      <a class="header-social__link header-social__fb" href="#"><img src="" alt="Фейсбук"></a>
+      <a class="header-social__link header-social__vk" href="#"><img src="img/svg/icon_vk.svg" alt="Вконтакте"></a>
+      <a class="header-social__link header-social__tw" href="#"><img src="img/svg/icon_tw.svg" alt="Твиттер"></a>
+      <a class="header-social__link header-social__fb" href="#"><img src="img/svg/icon_fb.svg" alt="Фейсбук"></a>
     </div>
   </header>
 
@@ -50,9 +50,21 @@
         </ul>
         <div class="pets__img">
           <button class="button-left" type="button" name="button"></button>
-          <img src="" alt="Коты">
-          <img src="" alt="Кошки">
-          <img src="" alt="Котята">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/png/gallery_cat_white_desktop.png, img/png/gallery_cat_white_desktop@2x.png 2x" width="517" height="214">
+            <source media="(min-width: 768px)" srcset="img/png/gallery_cat_white_tablet.png, img/png/gallery_cat_white_tablet@2x.png 2x" width="469" height="198">
+            <img class="pets__img-white-cat" src="img/png/gallery_cat_white_mobile.png" srcset="img/png/gallery_cat_white_mobile@2x.png 2x" alt="Белая кошка" width="519" height="214">
+          </picture>
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/png/gallery_cat_colorful_desktop.png, img/png/gallery_cat_colorful_desktop@2x.png 2x" width="519" height="241">
+            <source media="(min-width: 768px)" srcset="img/png/gallery_cat_colorful_tablet.png, img/png/gallery_cat_colorful_tablet@2x.png 2x" width="418" height="198">
+            <img class="pets__img-white-cat" src="img/png/gallery_cat_colorful_mobile.png" srcset="img/png/gallery_cat_colorful_mobile@2x.png 2x" alt="Разноцветная кошка" width="521" height="214">
+          </picture>
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/png/gallery_cat_gray_desktop.png, img/png/gallery_cat_gray_desktop@2x.png 2x" width="474" height="536">
+            <source media="(min-width: 768px)" srcset="img/png/gallery_cat_gray_tablet.png, img/png/gallery_cat_gray_tablet@2x.png 2x" width="474" height="547">
+            <img class="pets__img-white-cat" src="img/png/gallery_cat_gray_mobile.png" srcset="img/png/gallery_cat_gray_mobile@2x.png 2x" alt="Серая кошка" width="234" height="248">
+          </picture>
           <button class="button-right" type="button" name="button"></button>
         </div>
         <a class="gallery__link-button link-button" href="#">Смотреть больше</a>
@@ -111,7 +123,11 @@
       <p class="team__text text">Все сотрудники нашего питомника дипломированные специалисты в обламти фелинолонии и ветеринарии</p>
       <a class="team__link-button button-left" href="#"></a>
       <blockquote class="team__card">
-        <img class="team__card-item" src="" alt="Серёжа Попов">
+        <picture>
+          <source media="(min-width: 1366px)" srcset="img/png/team_popov_desktop.png, img/png/team_popov_desktop@2x.png 2x" width="360" height="356">
+          <source media="(min-width: 768px)" srcset="img/png/team_popov_tablet.png, img/png/team_popov_tablet@2x.png 2x" width="208" height="209">
+          <img class="team__card-img" src="img/png/team_popov_mobile.png" srcset="img/png/team_popov_mobile@2x.png 2x" alt="Серёжа Попов" width="126" height="126">
+        </picture>
         <h3 class="team__card-title">Серёжа Попов</h3>
         <p class="team__card-position">Основатель питомника</p>
         <p class="team__card-text">Наш питомник занимается разведением МейнКунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
@@ -170,7 +186,11 @@
       <h2 class="reviews__title title">Отзывы</h2>
       <button class="reviews__button reviews__button-left" type="button" name="button"></button>
       <blockquote class="review reviews__review">
-        <img class="review__img" src="" alt="">
+        <picture>
+          <source media="(min-width: 1366px)" srcset="img/png/review_lazareva_desktop.png, img/png/review_lazareva_desktop@2x.png 2x" width="481" height="332">
+          <source media="(min-width: 768px)" srcset="img/png/review_lazareva_tablet.png, img/png/review_lazareva_tablet@2x.png 2x" width="302" height="208">
+          <img class="team__card-img" src="img/png/review_lazareva_mobile.png" srcset="img/png/review_lazareva_mobile@2x.png 2x" alt="Василиса Лазарева" width="126" height="126">
+        </picture>
         <h3 class="review__author">Василиса Лазарева</h3>
         <p class="review__text">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно  умен и воспитан. Огромным плюсом питомника является возможностьконсультироваться в любое время</p>
         <div class="review__footer">
@@ -184,10 +204,14 @@
   </main>
 
   <footer class="footer footer-page">
+    <div class="footer__logo">
+      <img src="img/svg/logo_crown.svg" alt="Логотип Питомника">
+    </div>
+
     <div class="footer-social footer__social">
-      <a class="footer-social__link footer-social__vk" href="#"><img src="" alt="Вконтакте"></a>
-      <a class="footer-social__link footer-social__tw" href="#"><img src="" alt="Твиттер"></a>
-      <a class="footer-social__link footer-social__fb" href="#"><img src="" alt="Фейсбук"></a>
+      <a class="footer-social__link footer-social__vk" href="#"><img src="img/svg/icon_vk.svg" alt="Вконтакте"></a>
+      <a class="footer-social__link footer-social__tw" href="#"><img src="img/svg/icon_tw.svg" alt="Твиттер"></a>
+      <a class="footer-social__link footer-social__fb" href="#"><img src="img/svg/icon_fb.svg" alt="Фейсбук"></a>
     </div>
 
     <div class="footer-address footer__address">
@@ -198,6 +222,5 @@
       <p class="footer-tel__number">+7(383)900-64-65</p>
     </div>
   </footer>
-
 </body>
 </html>
