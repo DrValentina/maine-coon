@@ -6,6 +6,8 @@
 
 //Blocks
 @import "blocks/header.scss";
+@import "blocks/header-info.scss";
+@import "blocks/header-social.scss";
 @import "blocks/pets.scss";
 @import "blocks/breed.scss";
 @import "blocks/features.scss";
@@ -14,3 +16,5 @@
 @import "blocks/quastions.scss";
 @import "blocks/reviews.scss";
 @import "blocks/footer.scss";
+
+@import "blocks/link-button.scss";
