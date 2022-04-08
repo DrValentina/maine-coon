@@ -1,3 +1,9 @@
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100%
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -9,4 +15,28 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.title {
+  font-family: $yeseva-one, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: $basic-white;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.text {
+  font-family: $roboto, "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: $basic-beige;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

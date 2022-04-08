@@ -1,5 +1,16 @@
-/*Global*/
+//Global
 @import "global/normalize.scss";
 @import "global/fonts.scss";
-@import "global/global.scss";
 @import "global/variables.scss";
+@import "global/global.scss";
+
+//Blocks
+@import "blocks/header.scss";
+@import "blocks/pets.scss";
+@import "blocks/breed.scss";
+@import "blocks/features.scss";
+@import "blocks/care.scss";
+@import "blocks/team.scss";
+@import "blocks/quastions.scss";
+@import "blocks/reviews.scss";
+@import "blocks/footer.scss";
