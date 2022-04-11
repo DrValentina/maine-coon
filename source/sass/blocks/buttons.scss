@@ -1,0 +1,52 @@
+.link-button {
+  font-family: $roboto, "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $basic-white;
+  text-decoration: none;
+  border: 0.5px solid $basic-beige;
+  padding: 15px 18px;
+  @media (min-width: $tablet-width){
+    padding: 18px 35px;
+  }
+}
+
+.cats-button {
+  font-family: $roboto, "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  border: none;
+  background-color: $dark-brown;
+  color: rgba(255,255,255,0.2);
+  &:hover {
+    color: rgba(255,255,255,0.6);
+  }
+  &:active {
+    color: $basic-white;
+  }
+}
+
+.button-arrow {
+  border: none;
+  background: $dark-brown;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $basic-beige;
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+}
+
+.button-arrow_left {
+  transform: rotate(45deg);
+}
+
+.button-arrow_right {
+  transform: rotate(225deg);
+}

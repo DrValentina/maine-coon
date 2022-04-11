@@ -1,3 +1,41 @@
 .pets {
+  margin: 0;
+  padding: 60px 15px;
+  text-align: center;
   background-color: $dark-brown;
+  @media (min-width: $tablet-width){
+    padding: 100px 30px;
+  }
+}
+
+.pets__title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.pets__text {
+  display: inline-block;
+  max-width: 282px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  @media (min-width: $tablet-width){
+    max-width: 516px;
+  }
+}
+
+.pets__button-list {
+  display: flex;
+  max-width: 234px;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 38px;
+  margin-bottom: 40px;
+}
+
+.pets__img {
+  position: relative;
 }
