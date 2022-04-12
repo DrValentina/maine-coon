@@ -43,9 +43,11 @@
 }
 
 .header__social {
+  display: none;
   margin: 0;
   padding: 0;
   @media (min-width: $tablet-width){
+    display: block;
     margin-top: 60px;
     margin-left: 43px;
   }

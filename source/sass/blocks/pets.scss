@@ -5,6 +5,11 @@
   background-color: $dark-brown;
   @media (min-width: $tablet-width){
     padding: 100px 30px;
+    padding-bottom: 90px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 223px 140px;
+    padding-bottom: 83px;
   }
 }
 
@@ -23,6 +28,9 @@
   @media (min-width: $tablet-width){
     max-width: 516px;
   }
+  @media (min-width: $desktop-width){
+    margin-bottom: 100px;
+  }
 }
 
 .pets__button-list {
@@ -34,8 +42,7 @@
   padding: 0;
   margin-top: 38px;
   margin-bottom: 40px;
-}
-
-.pets__img {
-  position: relative;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
