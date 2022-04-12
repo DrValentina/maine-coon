@@ -1,3 +1,132 @@
 .breed {
+  position: relative;
   background-color: $dark-brown;
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.breed__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.breed__text {
+  max-width: 271px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    max-width: 443px;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 735px;
+  }
+}
+
+.breed__img {
+  position: relative;
+}
+
+.img-cat {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.breed__img:before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  outline: 1px solid $black-gray;
+  background-color: $black-gray;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: -120px;
+  top: 50px;
+  @media (min-width: $tablet-width) {
+    width: 342px;
+    height: 348px;
+    left: -190px;
+    top: 130px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 519px;
+    height: 519px;
+    left: -280px;
+    top: 190px;
+  }
+}
+
+.breed__img:after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  outline: 1px solid $basic-beige;
+  background-color: transparent;
+  border-radius: 50%;
+  left: -140px;
+  top: 25px;
+  box-sizing: border-box;
+  @media (min-width: $tablet-width) {
+    width: 416px;
+    height: 424px;
+    left: -225px;
+    top: 90px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 631px;
+    height: 631px;
+    left: -335px;
+    top: 135px;
+  }
+}
+
+.breed__list {
+  max-width: 254px;
+  margin: 0 auto;
+  margin-top: 53px;
+  padding: 0;
+  list-style: none;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+.breed__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: $basic-white;
+  font-weight: 300;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}
+
+.breed__item::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid $basic-beige;
+  background-color: $basic-beige;
+  border-radius: 50%;
+  top: 5px;
+  left: -20px;
+}
+
+.breed__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.breed__item-first {
+  top: 100px;
 }

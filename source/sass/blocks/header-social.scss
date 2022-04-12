@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.header-social::after {
+.header-social::before {
   @media(min-width: $desktop-width) {
     content: "";
     display: flex;
