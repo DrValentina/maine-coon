@@ -51,3 +51,19 @@
 .button-arrow_right {
   transform: rotate(225deg);
 }
+
+.button-arrow_white {
+  border: none;
+  background: $dark-brown;
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $basic-white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    cursor: pointer;
+  }
+}
