@@ -1,3 +1,191 @@
 .team {
+  position: relative;
   background-color: $dark-gray;
+  margin: 0;
+  padding: 60px 15px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 194px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 91px;
+    padding-top: 83px;
+    padding-bottom: 72px;
+  }
+}
+
+.team__title {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.team__text {
+  max-width: 252px;
+  margin: 0 auto;
+  margin-bottom: 103px;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    max-width: 510px;
+    margin-bottom: 36px;
+  }
+}
+
+.team__cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.team__card {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.team__card-content {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 11px;
+  padding-top: 88px;
+  padding-bottom: 16px;
+  background-color: $dark-brown;
+  @media (min-width: $tablet-width) {
+    border: 24px solid $dark-gray;
+    outline: 1px solid rgba(160, 123, 80, 0.43);
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 75px;
+    padding-left: 106px;
+    padding-right: 95px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 75px;
+    padding-left: 98px;
+    padding-right: 103px;
+  }
+}
+
+.team__card-img {
+  position: absolute;
+  top: -60px;
+  left: 85px;
+  z-index: 3;
+  @media (min-width: $tablet-width) {
+    top: 300px;
+    left: 380px;
+  }
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -1px;
+    left: 50px;
+  }
+}
+
+.team__card-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.team__card-position {
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    line-height: 21px;
+    margin-bottom: 33px;
+  }
+}
+
+.team__card-text {
+  max-width: 268px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  color: $basic-white;
+  font-weight: lighter;
+  @media (min-width: $tablet-width) {
+    max-width: 399px;
+    margin-bottom: 43px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 399px;
+  }
+}
+
+.team__card-social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+}
+
+.team__card-social-item {
+  display: flex;
+}
+
+.team__card-social-item:not(:last-child) {
+  margin-right: 15px;
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+}
+
+.team__card-social-link {
+  display: flex;
+  align-items: center;
+}
+
+.team__button_left {
+  position: relative;
+  z-index: 3;
+  top: -14px;
+  left: 60px;
+  @media (min-width: $tablet-width) {
+    top: 475px;
+    left: 350px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 200px;
+    left: -15px;
+  }
+}
+
+.team__button_right {
+  position: relative;
+  top: 12px;
+  left: -55px;
+  @media (min-width: $tablet-width) {
+    top: 500px;
+    left: -30px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 230px;
+    left: 66px;
+  }
 }
