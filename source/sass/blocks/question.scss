@@ -1,0 +1,210 @@
+.question {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $brown;
+  border-collapse: collapse;
+  justify-content: space-between;
+  align-items: stretch;
+  @media (min-width: $tablet-width) {
+    height: 77px;
+  }
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+}
+
+.question__text {
+  max-width: 219px;
+  font-family: $roboto, 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: $beige-text;
+  margin: 15px;
+  padding: 0;
+  text-align: left;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    max-width: none;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 21px;
+    margin-right: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 48px;
+    margin-right: 191px;
+  }
+}
+
+.question__button {
+  position: relative;
+  width: 43px;
+  height: auto;
+  border: none;
+  border-left: 1px solid $brown;
+  border-collapse: collapse;
+  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    width: 73px;
+  }
+}
+
+.answer_close {
+  display: none;
+}
+
+.question__button_open {
+  position: relative;
+  background-color:$basic-beige;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: $basic-white;
+    right: 30%;
+  }
+}
+
+.question__button_close {
+  position: relative;
+  background-color:transparent;
+  cursor: pointer;
+  &::before {
+    content: "+";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 42px;
+    color: $basic-beige;
+    text-align: center;
+  }
+}
+
+.question__first {
+  @media (min-width: $tablet-width) {
+  position: relative;
+  &::before {
+    content: "01";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $basic-beige;
+    left: -80px;
+    top: 10px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+  position: relative;
+  &::before {
+    content: "01";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 82px;
+    color: $basic-beige;
+    left: -120px;
+    top: 15px;
+    }
+  }
+}
+
+.question__second {
+  @media (min-width: $tablet-width) {
+  position: relative;
+  &::before {
+    content: "02";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $basic-beige;
+    left: -80px;
+    top: 5px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+  position: relative;
+  &::before {
+    content: "02";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 82px;
+    color: $basic-beige;
+    left: -120px;
+    top: 15px;
+    }
+  }
+}
+
+.question__third {
+  @media (min-width: $tablet-width) {
+  position: relative;
+  &::before {
+    content: "03";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $basic-beige;
+    left: -80px;
+    top: 10px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+  position: relative;
+  &::before {
+    content: "03";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 82px;
+    color: $basic-beige;
+    left: -120px;
+    top: 15px;
+    }
+  }
+}
+
+.question__fourth {
+  @media (min-width: $tablet-width) {
+  position: relative;
+  &::before {
+    content: "04";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    color: $basic-beige;
+    left: -80px;
+    top: 5px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+  position: relative;
+  &::before {
+    content: "04";
+    position: absolute;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 82px;
+    color: $basic-beige;
+    left: -120px;
+    top: 15px;
+    }
+  }
+}
