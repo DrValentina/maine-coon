@@ -254,22 +254,26 @@
 
     <section class="reviews main-reviews">
       <h2 class="reviews__title title">Отзывы</h2>
-      <button class="reviews__button reviews__button-left" type="button" name="button"></button>
-      <blockquote class="review reviews__review">
-        <picture>
-          <source media="(min-width: 1366px)" srcset="img/png/review_lazareva_desktop.png, img/png/review_lazareva_desktop@2x.png 2x" width="481" height="332">
-          <source media="(min-width: 768px)" srcset="img/png/review_lazareva_tablet.png, img/png/review_lazareva_tablet@2x.png 2x" width="302" height="208">
-          <img class="reviews__card-img" src="img/png/review_lazareva_mobile.png" srcset="img/png/review_lazareva_mobile@2x.png 2x" alt="Василиса Лазарева" width="126" height="126">
-        </picture>
-        <h3 class="review__author">Василиса Лазарева</h3>
-        <p class="review__text">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно  умен и воспитан. Огромным плюсом питомника является возможностьконсультироваться в любое время</p>
-        <div class="review__footer">
-          <time class="review__time">24 мая 2018</time>
-          <a class="review__tw" href="#"></a>
-          <a class="review__vk" href="#"></a>
-        </div>
-      </blockquote>
-      <button class="reviews__button reviews__button-right" type="button" name="button"></button>
+      <div class="reviews__container">
+        <button class="button-arrow reviews__button-left button-arrow_left" type="button" name="button"></button>
+        <blockquote class="review reviews__review">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/png/review_lazareva_desktop.png, img/png/review_lazareva_desktop@2x.png 2x" width="481" height="332">
+            <source media="(min-width: 768px)" srcset="img/png/review_lazareva_tablet.png, img/png/review_lazareva_tablet@2x.png 2x" width="302" height="208">
+            <img class="review__card-img" src="img/png/review_lazareva_mobile.png" srcset="img/png/review_lazareva_mobile@2x.png 2x" alt="Василиса Лазарева" width="242" height="166">
+          </picture>
+          <h3 class="review__author">Василиса Лазарева</h3>
+          <p class="review__text text">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно  умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
+          <div class="review__footer">
+            <time class="review__time text">24 мая 2018</time>
+            <div class="review__social">
+              <a class="review__social-link review__social-link_tw" href="#"></a>
+              <a class="review__social-link review__social-link_vk" href="#"></a>
+            </div>
+          </div>
+        </blockquote>
+        <button class="button-arrow reviews__button-right button-arrow_right" type="button" name="button"></button>
+      </div>
     </section>
   </main>
 

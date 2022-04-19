@@ -1,0 +1,131 @@
+.review {
+  position: relative;
+  background-color: $dark-gray;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 118px;
+  padding-bottom: 40px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    padding: 0 85px;
+    padding-top: 148px;
+    padding-bottom: 36px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 408px;
+    padding-top: 109px;
+    padding-right: 87px;
+    padding-bottom: 107px;
+    padding-left: 145px;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.review__card-img {
+  position: absolute;
+  top: -80px;
+  left: 30px;
+  @media (min-width: $tablet-width) {
+    top: -85px;
+    left: 140px;
+  }
+  @media (min-width: $desktop-width) {
+    left: -380px;
+    top: 45px;
+  }
+}
+
+.review__author {
+  font-family: $roboto, 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: medium;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  text-align: center;
+  color: $basic-white;
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  color: $basic-white;
+  font-weight: lighter;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+.review__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 26px;
+  padding: 0;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    margin: 0 115px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 230px;
+  }
+}
+
+.review__time {
+  font-size: 12px;
+  line-height: 17px;
+  @media (min-width: $tablet-width) {
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.review__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.review__social-link {
+  width: 28px;
+  height: 28px;
+  outline: 1px solid rgba(160, 123, 80, 0.27);
+}
+
+.review__social-link:first-child {
+  margin-right: 15px;
+  @media (min-width: $tablet-width) {
+    margin-right: 17px;
+  }  
+}
+
+.review__social-link_tw {
+  background-image: url(../img/svg/icon_tw.svg);
+  background-size: 16px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review__social-link_vk {
+  background-image: url(../img/svg/icon_vk.svg);
+  background-size: 18px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
