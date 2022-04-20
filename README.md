@@ -1,4 +1,4 @@
 # Сайт "Питомник Мейн Кунов"
 
 Ссылка на сайт:
-http://drvalentina.github.io/maine-coon
+http://drvalentina.github.io/maine-coon/
