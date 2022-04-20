@@ -161,6 +161,15 @@
   align-items: center;
 }
 
+.team__card-social-link path {
+  &:hover {
+    fill: rgba(255, 255, 255, 0.7);
+  }
+  &:active {
+    fill: rgba(255, 255, 255, 0.4);
+  }
+}
+
 .team__button_left {
   position: relative;
   z-index: 3;

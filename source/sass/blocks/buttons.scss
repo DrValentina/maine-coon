@@ -10,6 +10,14 @@
   @media (min-width: $tablet-width){
     padding: 18px 35px;
   }
+  &:hover {
+    background-color: rgba(160, 123, 80, 0.8);
+    color: rgba(255,255,255,0.6);
+  }
+  &:active {
+    background-color: $basic-beige;
+    color: $basic-white;
+  }
 }
 
 .cats-button {
@@ -20,6 +28,7 @@
   border: none;
   background-color: $dark-brown;
   color: rgba(255,255,255,0.2);
+  cursor: pointer;
   &:hover {
     color: rgba(255,255,255,0.6);
   }
@@ -42,17 +51,37 @@
     height: 14px;
     font-size: 0;
     border: solid $basic-beige;
-   border-width: 0 0 2px 2px;
+    border-width: 0 0 2px 2px;
     cursor: pointer;
   }
 }
 
-.button-arrow_left {
-  transform: rotate(45deg);
+.button-arrow:hover {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 0;
+    border: solid rgba(160, 123, 80, 0.7);
+    border-width: 0 0 2px 2px;
+    cursor: pointer;
+  }
 }
 
-.button-arrow_right {
-  transform: rotate(225deg);
+.button-arrow:active {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 0;
+    border: solid rgba(160, 123, 80, 0.4);
+    border-width: 0 0 2px 2px;
+    cursor: pointer;
+  }
 }
 
 .button-arrow_white {
@@ -64,9 +93,42 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    border: 1px solid $basic-white;
-    border-top-color: transparent;
-    border-right-color: transparent;
+    border: solid $basic-white;
+    border-width: 0 0 2px 2px;
     cursor: pointer;
   }
+}
+
+.button-arrow_white:hover {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: solid rgba(255,255,255,0.7);
+    border-width: 0 0 2px 2px;
+    cursor: pointer;
+  }
+}
+
+.button-arrow_white:active {
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: solid rgba(255,255,255,0.4);
+    border-width: 0 0 2px 2px;
+    cursor: pointer;
+  }
+}
+
+.button-arrow_left {
+  transform: rotate(45deg);
+}
+
+.button-arrow_right {
+  transform: rotate(225deg);
 }

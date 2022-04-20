@@ -1,4 +1,5 @@
 .question {
+  position: relative;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid $brown;
@@ -39,7 +40,6 @@
 }
 
 .question__button {
-  position: relative;
   width: 43px;
   height: auto;
   border: none;
@@ -56,42 +56,81 @@
 }
 
 .question__button_open {
-  position: relative;
   background-color:$basic-beige;
   cursor: pointer;
   &::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 2px;
-    background: $basic-white;
-    right: 12px;
+    content: "—";
+    position: relative;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: $basic-white;
     @media (min-width: $tablet-width) {
-    right: 25px;
+      font-size: 26px;
     }
   }
 }
 
+.question__button_open:hover {
+  &::before {
+    content: "—";
+    position: relative;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.question__button_open:active{
+  &::before {
+    content: "—";
+    position: relative;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
 .question__button_close {
-  position: relative;
   background-color:transparent;
   cursor: pointer;
   &::before {
     content: "+";
-    position: absolute;
+    position: relative;
+    height: auto;
     font-family: $roboto, 'Open Sans', sans-serif;
     font-size: 36px;
     font-weight: 300;
-    line-height: 42px;
     color: $basic-beige;
     text-align: center;
-    left: 10px;
-    top: 15px;
-    height: inherit;
-    @media (min-width: $tablet-width) {
-      top: 40px;
-      left: 25px;
-    }
+  }
+}
+
+.question__button_close:hover {
+  &::before {
+    content: "+";
+    position: relative;
+    height: auto;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: rgba(160, 123, 80, 0.7);
+    text-align: center;
+  }
+}
+
+.question__button_close:active {
+  &::before {
+    content: "+";
+    position: relative;
+    height: auto;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: rgba(160, 123, 80, 0.4);
+    text-align: center;
   }
 }
 

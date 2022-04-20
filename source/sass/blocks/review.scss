@@ -107,13 +107,19 @@
   width: 28px;
   height: 28px;
   outline: 1px solid rgba(160, 123, 80, 0.27);
+  &:hover {
+    background-color: rgba(160, 123, 80, 0.2);
+  }
+  &:active {
+    background-color: rgba(160, 123, 80, 0.6);
+  }
 }
 
 .review__social-link:first-child {
   margin-right: 15px;
   @media (min-width: $tablet-width) {
     margin-right: 17px;
-  }  
+  }
 }
 
 .review__social-link_tw {

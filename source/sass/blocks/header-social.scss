@@ -54,3 +54,12 @@
     margin-bottom: 12px;
   }
 }
+
+.icon path{
+  &:hover{
+    fill: rgba(255,255,255,0.7);
+  }
+  &:active {
+    fill: rgba(255,255,255,0.4);
+  }
+}

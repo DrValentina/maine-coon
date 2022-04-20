@@ -28,6 +28,15 @@
   }
 }
 
+.header__logo-img path {
+  &:hover {
+    fill: rgba(160, 123, 80, 0.7);
+    }
+  &:active {
+    fill: rgba(160, 123, 80, 0.4);
+  }
+}
+
 .header__info {
   margin: 0;
   margin-top: 57px;

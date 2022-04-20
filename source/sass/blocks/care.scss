@@ -48,21 +48,12 @@
 
 .care__item {
   position: relative;
-  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: auto;
-  border: 1px solid $basic-beige;
-  border-right-width: 46px;
   margin: 0;
-  padding: 25px;
-  padding-right: 0;
-  @media (min-width: $tablet-width) {
-    width: 420px;
-    padding-left: 49px;
-    padding-top: 39px;
-    padding-bottom: 44px;
-    padding-right: 60px;
-    border-right-width: 60px;
-  }
+  padding: 0;
 }
 
 .care__item:not(:last-child) {
@@ -86,7 +77,22 @@
   }
 }
 
-.care__item-title {
+.care__content {
+  width: 244px;
+  margin: 0;
+  padding: 25px;
+  padding-right: 0;
+  border: 1px solid $basic-beige;
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    padding-left: 49px;
+    padding-top: 39px;
+    padding-bottom: 44px;
+    padding-right: 60px;
+  }
+}
+
+.care__content-title {
   font-family: $roboto, "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -97,7 +103,7 @@
   color: $basic-beige;
 }
 
-.care__item-text {
+.care__content-text {
   margin: 0;
   padding: 0;
   color: $basic-white;
@@ -107,30 +113,42 @@
 }
 
 .care__item-link {
-  position: absolute;
-  top: 60%;
-  left: 260px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 46px;
+  outline: 1px solid $basic-beige;
+  background-color: $basic-beige;
   @media (min-width: $tablet-width) {
-    left: 550px;
+    width: 60px;
   }
 }
 
-.care__item-wool {
+.care__item-link-button {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+}
+
+.care__content-wool {
   max-width: 211px;
   @media (min-width: $tablet-width) {
     max-width: none;
   }
 }
 
-.care__item-ears,
-.care__item-nutrition {
+.care__content-ears,
+.care__content-nutrition {
   max-width: 209px;
   @media (min-width: $tablet-width) {
     max-width: none;
   }
 }
 
-.care__item-claws {
+.care__content-claws {
   max-width: 162px;
   @media (min-width: $tablet-width) {
     max-width: none;
