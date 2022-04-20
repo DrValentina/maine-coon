@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
+  <title>Питомник Мейн-Кунов</title>
+</head>
+
+<body class="page">
+  <header class="header page__header">
+    <div class="header__logo">
+      <a class="header__logo-link" href="#">
+        <svg class="header__logo-img" width="52" height="24" viewBox="0 0 52 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.4467 23H7.38286C7.02281 23 6.70276 22.7749 6.58612 22.4403L1.04553 6.55107C0.89515 6.1179 1.1294 5.64729 1.56947 5.49848C1.70443 5.45346 1.84517 5.44208 1.97579 5.46483C2.28042 5.48237 2.56431 5.66341 2.6959 5.95724C3.38082 7.48659 5.81733 12.4239 8.65968 12.4239C8.69487 12.4239 8.73053 12.423 8.76668 12.4211C10.4812 12.3462 13.1625 10.4007 16.2006 1.56302C16.3167 1.22654 16.6373 1 16.9983 1C17.3598 1 17.6803 1.22654 17.7965 1.56302C18.8337 4.5767 22.3104 12.3751 25.9206 12.3751C25.9302 12.3751 25.9394 12.3746 25.9495 12.3746C27.6611 12.3543 30.2928 10.4657 33.111 1.5815C33.2214 1.23507 33.5468 1 33.9155 1H33.9237C34.2958 1.00379 34.6211 1.24644 34.7243 1.59762C35.5856 4.51414 38.6405 12.1533 42.3876 12.4723C44.5768 12.6495 47.0042 10.2135 49.4007 5.4018C49.5954 5.00892 50.0687 4.83215 50.4799 5.00039C50.8901 5.16768 51.0983 5.61981 50.9547 6.03402L45.2439 22.4403C45.1268 22.7754 44.8068 23 44.4467 23ZM7.9844 21.3436H43.8442L47.1445 11.8623C45.5495 13.522 43.93 14.2623 42.2411 14.1229C38.0911 13.768 35.2434 7.888 33.9194 4.43168C31.5807 10.8505 28.9697 13.9959 25.9688 14.0305C25.9524 14.0305 25.937 14.0315 25.9206 14.0315C21.7267 14.0315 18.4891 7.70981 17.0224 4.22268C14.5198 10.7159 11.8341 13.9443 8.84139 14.076C7.30719 14.1343 5.97109 13.3827 4.82055 12.2675L7.9844 21.3436Z" fill="#A07B50" stroke="#1F1C1D" stroke-width="0.8"/>
+        </svg>
+      </a>
+    </div>
+    <div class="header-info header__info">
+      <p class="header-info__city text">Новосибирск</p>
+      <h1 class="header-info__title title">Питомник <br>Мейн-Кунов</h1>
+      <p class="header-info__text text">Первый питомник с расширенным <br>спектром услуг</p>
+      <a class="header-info__button link-button" href="#">Смотреть котиков</a>
+    </div>
+    <div class="header-social header__social">
+      <ul class="header-social__list">
+        <li class="header-social__item">
+          <a class="header-social__link header-social__vk" href="#">
+            <svg class="icon" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.8841 7.1355C12.8492 7.0724 12.633 6.56585 11.593 5.52472C10.5041 4.43452 10.6504 4.61154 11.9619 2.72647C12.7606 1.57842 13.08 0.877323 12.98 0.577604C12.8849 0.291906 12.2975 0.367274 12.2975 0.367274L10.3441 0.379543C10.3441 0.379543 10.1994 0.35851 10.0914 0.427744C9.98654 0.496101 9.9191 0.653848 9.9191 0.653848C9.9191 0.653848 9.60951 1.54249 9.19673 2.29792C8.32648 3.89204 7.97789 3.97617 7.83569 3.87714C7.50498 3.64666 7.58786 2.94994 7.58786 2.45567C7.58786 0.910625 7.80482 0.266491 7.16452 0.0999807C6.95163 0.0447692 6.79562 0.00796159 6.25202 0.00182698C5.55484 -0.00606037 4.96411 0.00445609 4.63015 0.180607C4.4075 0.298041 4.23605 0.560076 4.34088 0.574975C4.47007 0.593378 4.76259 0.659983 4.91779 0.887839C5.11849 1.18142 5.11118 1.84221 5.11118 1.84221C5.11118 1.84221 5.22657 3.66068 4.84222 3.88678C4.57814 4.0419 4.21655 3.72553 3.44056 2.27864C3.04322 1.53811 2.74257 0.7187 2.74257 0.7187C2.74257 0.7187 2.68488 0.566211 2.58168 0.484708C2.45655 0.385678 2.28104 0.354129 2.28104 0.354129L0.423525 0.366398C0.423525 0.366398 0.144817 0.375162 0.0424345 0.505741C-0.0485722 0.622299 0.0351215 0.862424 0.0351215 0.862424C0.0351215 0.862424 1.4896 4.53179 3.13585 6.38182C4.6464 8.0776 6.3609 7.9663 6.3609 7.9663H7.13771C7.13771 7.9663 7.37254 7.93825 7.49198 7.79891C7.60249 7.67096 7.59843 7.43083 7.59843 7.43083C7.59843 7.43083 7.58299 6.30645 8.06727 6.14081C8.54425 5.97781 9.15692 7.22752 9.80615 7.70864C10.2969 8.07234 10.6699 7.99259 10.6699 7.99259L12.4063 7.9663C12.4063 7.9663 13.3148 7.90583 12.8841 7.1355Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social__item">
+          <a class="header-social__link header-social__tw" href="#">
+            <svg class="icon" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.3758 4.62011C14.2231 4.55022 14.7977 4.16506 15.0189 3.64245C14.7133 3.83019 13.7646 4.03487 13.2407 3.83994C13.215 3.71684 13.1863 3.59991 13.1581 3.49434C12.7589 2.02841 11.392 0.847405 9.9598 0.990077C10.0757 0.943291 10.1932 0.899732 10.3104 0.860627C10.468 0.804161 11.393 0.653668 11.2473 0.327185C11.1246 0.040017 9.99448 0.544209 9.7817 0.610109C10.0626 0.504473 10.5271 0.322766 10.5769 0C10.1466 0.0590258 9.72411 0.262477 9.3977 0.558308C9.51554 0.431453 9.60494 0.276857 9.62391 0.110476C8.47615 0.843722 7.80569 2.322 7.26309 3.75598C6.83704 3.34308 6.45942 3.01793 6.12066 2.83738C5.17032 2.32775 4.03403 1.79603 2.25031 1.13387C2.19557 1.72402 2.54218 2.50872 3.54095 3.03055C3.32456 3.00159 2.92885 3.06622 2.61236 3.14201C2.74125 3.81809 3.16218 4.3751 4.30173 4.64445C3.78095 4.67882 3.51181 4.79733 3.26789 5.05276C3.50508 5.52297 4.08387 6.07637 5.12504 5.96277C3.96746 6.4617 4.65305 7.38567 5.59497 7.24787C3.98812 8.90757 1.45474 8.78559 0 7.39742C3.79824 12.573 12.0547 10.4583 13.2852 5.47317C14.207 5.48102 14.749 5.15384 15.085 4.79312C14.5539 4.88326 13.784 4.79011 13.3758 4.62011Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li class="header-social__item">
+          <a class="header-social__link header-social__fb" href="#">
+            <svg class="icon" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.09903 2.72854C1.09903 3.00311 1.09903 4.22865 1.09903 4.22865H0V6.06299H1.09903V11.514H3.35667V6.06314H4.87165C4.87165 6.06314 5.01353 5.18359 5.08231 4.22189C4.88513 4.22189 3.36521 4.22189 3.36521 4.22189C3.36521 4.22189 3.36521 3.15472 3.36521 2.96767C3.36521 2.78022 3.61136 2.52806 3.85465 2.52806C4.09748 2.52806 4.60999 2.52806 5.08469 2.52806C5.08469 2.27831 5.08469 1.41538 5.08469 0.618408C4.45099 0.618408 3.73004 0.618408 3.41225 0.618408C1.04322 0.618282 1.09903 2.45445 1.09903 2.72854Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="pets main__pets">
+      <h2 class="pets__title title">Питомцы</h2>
+      <p class="pets__text text">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
+      <div class="pets__gallery gallery">
+        <ul class="pets__button-list">
+          <li class="pets__button-item">
+            <button class="cats-button" type="button" name="button">Коты</button>
+          </li>
+          <li class="pets__button-item">
+            <button class="cats-button" type="button" name="button">Кошки</button>
+          </li>
+          <li class="pets__button-item">
+            <button class="cats-button" type="button" name="button">Котята</button>
+          </li>
+        </ul>
+        <div class="gallery__cats">
+          <button class="gallery__button_left button-arrow button-arrow_left" type="button" name="button"></button>
+          <ul class="gallery__list">
+            <li class="gallery__item img-white-cat">
+              <picture class="gallery__img">
+                <source media="(min-width: 1366px)" srcset="img/png/gallery_cat_white_desktop.png, img/png/gallery_cat_white_desktop@2x.png 2x" width="517" height="214">
+                <source media="(min-width: 768px)" srcset="img/png/gallery_cat_white_tablet.png, img/png/gallery_cat_white_tablet@2x.png 2x" width="469" height="198">
+                <img class="gallery__img-cat" src="img/png/gallery_cat_white_mobile.png" srcset="img/png/gallery_cat_white_mobile@2x.png 2x" alt="Белая кошка" width="519" height="214">
+              </picture>
+            </li>
+            <li class="gallery__item img-colorful-cat">
+              <picture class="gallery__img">
+                <source media="(min-width: 1366px)" srcset="img/png/gallery_cat_colorful_desktop.png, img/png/gallery_cat_colorful_desktop@2x.png 2x" width="519" height="241">
+                <source media="(min-width: 768px)" srcset="img/png/gallery_cat_colorful_tablet.png, img/png/gallery_cat_colorful_tablet@2x.png 2x" width="418" height="198">
+                <img class="gallery__img-cat" src="img/png/gallery_cat_colorful_mobile.png" srcset="img/png/gallery_cat_colorful_mobile@2x.png 2x" alt="Разноцветная кошка" width="521" height="214">
+              </picture>
+            </li>
+            <li class="gallery__item img-gray-cat">
+              <picture class="gallery__img">
+                <source media="(min-width: 1366px)" srcset="img/png/gallery_cat_gray_desktop.png, img/png/gallery_cat_gray_desktop@2x.png 2x" width="429" height="485">
+                <source media="(min-width: 768px)" srcset="img/png/gallery_cat_gray_tablet.png, img/png/gallery_cat_gray_tablet@2x.png 2x" width="474" height="547">
+                <img class="gallery__img-cat" src="img/png/gallery_cat_gray_mobile.png" srcset="img/png/gallery_cat_gray_mobile@2x.png 2x" alt="Серая кошка" width="234" height="248">
+              </picture>
+            </li>
+          </ul>
+          <button class="gallery__button_right button-arrow button-arrow_right" type="button" name="button"></button>
+        </div>
+        <a class="gallery__link-button link-button" href="#">Смотреть больше</a>
+      </div>
+    </section>
+
+    <section class="breed main__breed">
+      <h2 class="breed__title title">Особенности породы</h2>
+      <p class="breed__text text">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
+      <div class="breed__feature">
+        <div class="breed__img-circle">
+          <picture class="breed__img">
+            <source media="(min-width: 1366px)" srcset="img/png/background_breed_desktop.png, img/png/background_breed_desktop@2x.png 2x" width="410" height="611">
+            <source media="(min-width: 768px)" srcset="img/png/background_breed_tablet.png, img/png/background_breed_tablet@2x.png 2x" width="623" height="908">
+            <img class="img-cat" src="img/png/background_breed_mobile.png" srcset="img/png/background_breed_mobile@2x.png 2x" alt="Особенности породы" width="267" height="291">
+          </picture>
+        </div>
+        <ul class="breed__list">
+          <li class="breed__item text breed__item-first">Легко уживается в семьях с детьми или другими животными</li>
+          <li class="breed__item text breed__item-second">Выполняет команды как дрессированная собака</li>
+          <li class="breed__item text breed__item-third">Вес может достигать 12 кг, а длина 1 м</li>
+          <li class="breed__item text breed__item-fourth">Внешний вид этой кошки похож на дикую рысь</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features main__features">
+      <h2 class="features__title title">Почему именно мы?</h2>
+      <p class="features__text text">Приобретая животное в нашем питомнике, вы получите</p>
+      <ul class="features__list">
+        <li class="features__item service">
+          <p class="features__item-text text">Бесплатное ветеринарное обслуживание 5 лет</p>
+        </li>
+        <li class="features__item consultation">
+          <p class="features__item-text text">Консультирование по любому вопросу 24 часа в сутки</p>
+        </li>
+        <li class="features__item nutrition">
+          <p class="features__item-text text">Индивидуальный подбор питания для вашего кота</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="care main-care">
+      <h2 class="care__title title">Об уходе за Мейн-Куном</h2>
+      <ul class="care__list">
+        <li class="care__item">
+          <div class="care__content">
+            <h3 class="care__content-title">Шерсть</h3>
+            <p class="care__content-text text care__content-wool">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
+          </div>
+          <div class="care__item-link">
+            <a class="care__item-link-button button-arrow_white button-arrow_right" href="#"></a>
+          </div>
+        </li>
+        <li class="care__item">
+          <div class="care__content">
+            <h3 class="care__content-title">Уши и глаза</h3>
+            <p class="care__content-text text care__content-ears">Владельцам котов необходимо регулярно осматривать ушки и глаза своих питомцев, ведь это может быть признаками заболевания</p>
+          </div>
+          <div class="care__item-link">
+            <a class="care__item-link-button button-arrow_white button-arrow_right" href="#"></a>
+          </div>
+        </li>
+        <li class="care__item">
+          <div class="care__content">
+            <h3 class="care__content-title">Когти</h3>
+            <p class="care__content-text text care__content-claws">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p>
+          </div>
+          <div class="care__item-link">
+            <a class="care__item-link-button button-arrow_white button-arrow_right" href="#"></a>
+          </div>
+        </li>
+        <li class="care__item">
+          <div class="care__content">
+            <h3 class="care__content-title">Питание</h3>
+            <p class="care__content-text text care__content-nutrition">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p>
+          </div>
+          <div class="care__item-link">
+            <a class="care__item-link-button button-arrow_white button-arrow_right" href="#"></a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="team main-team">
+      <h2 class="team__title title">Наша команда</h2>
+      <p class="team__text text">Все сотрудники нашего питомника дипломированные специалисты в области фелинологии и ветеринарии</p>
+      <div class="team__cards">
+        <button class="team__button_left button-arrow button-arrow_left" type="button" name="button"></button>
+        <blockquote class="team__card">
+          <picture class="team__card-img">
+            <source media="(min-width: 1366px)" srcset="img/png/team_popov_desktop.png, img/png/team_popov_desktop@2x.png 2x" width="360" height="356">
+            <source media="(min-width: 768px)" srcset="img/png/team_popov_tablet.png, img/png/team_popov_tablet@2x.png 2x" width="208" height="209">
+            <img src="img/png/team_popov_mobile.png" srcset="img/png/team_popov_mobile@2x.png 2x" alt="Серёжа Попов" width="126" height="126">
+          </picture>
+          <div class="team__card-content">
+            <h3 class="team__card-title text">Серёжа Попов</h3>
+            <p class="team__card-position text">Основатель питомника</p>
+            <p class="team__card-text text">Наш питомник занимается разведением Мейн Кунов на протяжении 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
+            <ul class="team__card-social">
+              <li class="team__card-social-item fb">
+                <a class="team__card-social-link" href="#">
+                  <svg class="team__card-social-img" width="5" height="12" viewBox="0 0 5 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.09903 2.72854C1.09903 3.00311 1.09903 4.22865 1.09903 4.22865H0V6.06299H1.09903V11.514H3.35667V6.06314H4.87165C4.87165 6.06314 5.01353 5.18359 5.08231 4.22189C4.88513 4.22189 3.36521 4.22189 3.36521 4.22189C3.36521 4.22189 3.36521 3.15472 3.36521 2.96767C3.36521 2.78022 3.61136 2.52806 3.85465 2.52806C4.09748 2.52806 4.60999 2.52806 5.08469 2.52806C5.08469 2.27831 5.08469 1.41538 5.08469 0.618408C4.45099 0.618408 3.73004 0.618408 3.41225 0.618408C1.04322 0.618282   1.09903 2.45445 1.09903 2.72854Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__card-social-item tw">
+                <a class="team__card-social-link" href="#">
+                  <svg class="team__card-social-img" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.3758 4.62011C14.2231 4.55022 14.7977 4.16506 15.0189 3.64245C14.7133 3.83019 13.7646 4.03487 13.2407 3.83994C13.215 3.71684 13.1863 3.59991 13.1581 3.49434C12.7589 2.02841 11.392 0.847405 9.9598 0.990077C10.0757 0.943291 10.1932 0.899732 10.3104 0.860627C10.468 0.804161 11.393 0.653668 11.2473 0.327185C11.1246 0.040017 9.99448 0.544209 9.7817 0.610109C10.0626 0.504473 10.5271 0.322766 10.5769 0C10.1466 0.0590258 9.72411 0.262477 9.3977 0.558308C9.51554 0.431453 9.60494 0.276857 9.62391 0.110476C8.47615 0.843722 7.80569 2.322 7.26309 3.75598C6.83704 3.34308 6.45942 3.01793 6.12066 2.83738C5.17032 2.32775 4.03403 1.79603 2.25031 1.13387C2.19557 1.72402 2.54218 2.50872 3.54095 3.03055C3.32456 3.00159 2.92885 3.06622 2.61236 3.14201C2.74125 3.81809 3.16218 4.3751 4.30173 4.64445C3.78095 4.67882 3.51181 4.79733 3.26789 5.05276C3.50508 5.52297 4.08387 6.07637 5.12504 5.96277C3.96746 6.4617 4.65305 7.38567 5.59497 7.24787C3.98812 8.90757 1.45474 8.78559 0 7.39742C3.79824 12.573 12.0547 10.4583 13.2852 5.47317C14.207 5.48102 14.749 5.15384 15.085 4.79312C14.5539 4.88326 13.784 4.79011 13.3758 4.62011Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__card-social-item vk">
+                <a class="team__card-social-link" href="#">
+                  <svg class="team__card-social-img" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8841 7.1355C12.8492 7.0724 12.633 6.56585 11.593 5.52472C10.5041 4.43452 10.6504 4.61154 11.9619 2.72647C12.7606 1.57842 13.08 0.877323 12.98 0.577604C12.8849 0.291906 12.2975 0.367274 12.2975 0.367274L10.3441 0.379543C10.3441 0.379543 10.1994 0.35851 10.0914 0.427744C9.98654 0.496101 9.9191 0.653848 9.9191 0.653848C9.9191 0.653848 9.60951 1.54249 9.19673 2.29792C8.32648 3.89204 7.97789 3.97617 7.83569 3.87714C7.50498 3.64666 7.58786 2.94994 7.58786 2.45567C7.58786 0.910625 7.80482 0.266491 7.16452 0.0999807C6.95163 0.0447692 6.79562 0.00796159 6.25202 0.00182698C5.55484 -0.00606037 4.96411 0.00445609 4.63015 0.180607C4.4075 0.298041 4.23605 0.560076 4.34088 0.574975C4.47007 0.593378 4.76259 0.659983 4.91779 0.887839C5.11849 1.18142 5.11118 1.84221 5.11118 1.84221C5.11118 1.84221 5.22657 3.66068 4.84222 3.88678C4.57814 4.0419 4.21655 3.72553 3.44056 2.27864C3.04322 1.53811 2.74257 0.7187 2.74257 0.7187C2.74257 0.7187 2.68488 0.566211 2.58168 0.484708C2.45655 0.385678 2.28104 0.354129 2.28104 0.354129L0.423525 0.366398C0.423525 0.366398 0.144817 0.375162 0.0424345 0.505741C-0.0485722 0.622299 0.0351215 0.862424 0.0351215 0.862424C0.0351215 0.862424 1.4896 4.53179 3.13585 6.38182C4.6464 8.0776 6.3609 7.9663 6.3609 7.9663H7.13771C7.13771 7.9663 7.37254 7.93825 7.49198 7.79891C7.60249 7.67096 7.59843 7.43083 7.59843 7.43083C7.59843 7.43083 7.58299 6.30645 8.06727 6.14081C8.54425 5.97781 9.15692 7.22752 9.80615 7.70864C10.2969 8.07234 10.6699 7.99259 10.6699 7.99259L12.4063 7.9663C12.4063 7.9663 13.3148 7.90583 12.8841 7.1355Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </blockquote>
+        <button class="team__button_right button-arrow button-arrow_right" type="button" name="button"></button>
+      </div>
+    </section>
+
+    <section class="questions main-questions">
+      <h2 class="questions__title title">Вопрос-Ответ</h2>
+      <p class="questions__text text">Мы ответим на самые популярные ваши вопросы</p>
+      <div class="questions__box">
+        <div class="questions__container questions-container">
+          <div class="question quastions-container__question question__first">
+            <p class="question__text">С какого возраста можно забрать котенка из питомника?</p>
+            <button class="question__button question__button_open" type="button" name="button"></button>
+          </div>
+          <div class="questions-container__answer answer_open">
+            <p class="questions-container__answer-text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
+            <p class="questions-container__answer-text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
+          </div>
+        </div>
+        <div class="questions__container questions-container question__second">
+          <div class="question questions-container__question">
+            <p class="question__text">Как зарезервировать котенка?</p>
+            <button class="question__button question__button_close" type="button" name="button"></button>
+          </div>
+          <div class="questions-container__answer answer_close">
+            <p class="questions-container__answer-text"></p>
+          </div>
+        </div>
+        <div class="questions__container questions-container question__third">
+          <div class="question quastions-container__question">
+            <p class="question__text">Можно ли купить кота, если я живу в другом городе?</p>
+            <button class="question__button question__button_close" type="button" name="button"></button>
+          </div>
+          <div class="questions-container__answer answer_close">
+            <p class="questions-container__answer-text"></p>
+          </div>
+        </div>
+        <div class="questions__container questions-container question__fourth">
+          <div class="question questions-container__question">
+            <p class="question__text">Как подготовить дом к приему нового питомца?</p>
+            <button class="question__button question__button_close" type="button" name="button"></button>
+          </div>
+          <div class="questions-container__answer answer_close">
+            <p class="questions-container__answer-text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews main-reviews">
+      <h2 class="reviews__title title">Отзывы</h2>
+      <div class="reviews__container">
+        <button class="button-arrow reviews__button-left button-arrow_left" type="button" name="button"></button>
+        <blockquote class="review reviews__review">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/png/review_lazareva_desktop.png, img/png/review_lazareva_desktop@2x.png 2x" width="481" height="332">
+            <source media="(min-width: 768px)" srcset="img/png/review_lazareva_tablet.png, img/png/review_lazareva_tablet@2x.png 2x" width="302" height="208">
+            <img class="review__card-img" src="img/png/review_lazareva_mobile.png" srcset="img/png/review_lazareva_mobile@2x.png 2x" alt="Василиса Лазарева" width="242" height="166">
+          </picture>
+          <h3 class="review__author">Василиса Лазарева</h3>
+          <p class="review__text text">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно  умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
+          <div class="review__footer">
+            <time class="review__time text">24 мая 2018</time>
+            <div class="review__social">
+              <a class="review__social-link review__social-link_tw" href="#"></a>
+              <a class="review__social-link review__social-link_vk" href="#"></a>
+            </div>
+          </div>
+        </blockquote>
+        <button class="button-arrow reviews__button-right button-arrow_right" type="button" name="button"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer-page">
+    <div class="footer__logo">
+      <a class="footer__logo-link" href="#">
+        <svg class="footer__logo-img" width="56" height="25" viewBox="0 0 56 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.4467 23H7.38286C7.02281 23 6.70276 22.7749 6.58612 22.4403L1.04553 6.55107C0.89515 6.1179 1.1294 5.64729 1.56947 5.49848C1.70443 5.45346 1.84517 5.44208 1.97579 5.46483C2.28042 5.48237 2.56431 5.66341 2.6959 5.95724C3.38082 7.48659 5.81733 12.4239 8.65968 12.4239C8.69487 12.4239 8.73053 12.423 8.76668 12.4211C10.4812 12.3462 13.1625 10.4007 16.2006 1.56302C16.3167 1.22654 16.6373 1 16.9983 1C17.3598 1 17.6803 1.22654 17.7965 1.56302C18.8337 4.5767 22.3104 12.3751 25.9206 12.3751C25.9302 12.3751 25.9394 12.3746 25.9495 12.3746C27.6611 12.3543 30.2928 10.4657 33.111 1.5815C33.2214 1.23507 33.5468 1 33.9155 1H33.9237C34.2958 1.00379 34.6211 1.24644 34.7243 1.59762C35.5856 4.51414 38.6405 12.1533 42.3876 12.4723C44.5768 12.6495 47.0042 10.2135 49.4007 5.4018C49.5954 5.00892 50.0687 4.83215 50.4799 5.00039C50.8901 5.16768 51.0983 5.61981 50.9547 6.03402L45.2439 22.4403C45.1268 22.7754 44.8068 23 44.4467 23ZM7.9844 21.3436H43.8442L47.1445 11.8623C45.5495 13.522 43.93 14.2623 42.2411 14.1229C38.0911 13.768 35.2434 7.888 33.9194 4.43168C31.5807 10.8505 28.9697 13.9959 25.9688 14.0305C25.9524 14.0305 25.937 14.0315 25.9206 14.0315C21.7267 14.0315 18.4891 7.70981 17.0224 4.22268C14.5198 10.7159 11.8341 13.9443 8.84139 14.076C7.30719 14.1343 5.97109 13.3827 4.82055 12.2675L7.9844 21.3436Z" fill="#A07B50" stroke="#1F1C1D" stroke-width="0.8"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-social footer__social">
+      <a class="footer-social__link footer-social__fb" href="#">
+        <svg class="footer-icon" width="7" height="16" viewBox="0 0 7 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.51301 3.09869C1.51301 3.5019 1.51301 5.30158 1.51301 5.30158H0V7.99528H1.51301V16H4.62106V7.9955H6.70671C6.70671 7.9955 6.90204 6.70389 6.99672 5.29165C6.72526 5.29165 4.63282 5.29165 4.63282 5.29165C4.63282 5.29165 4.63282 3.72454 4.63282 3.44985C4.63282 3.17458 4.97169 2.80429 5.30662 2.80429C5.64092 2.80429 6.34649 2.80429 7 2.80429C7 2.43754 7 1.17034 7 9.62225e-09C6.12759 9.62225e-09 5.13507 9.62225e-09 4.69758 9.62225e-09C1.43619 -0.000185988 1.51301 2.69619 1.51301 3.09869Z" fill="#A07B50"/>
+        </svg>
+      </a>
+      <a class="footer-social__link footer-social__tw" href="#">
+        <svg class="footer-icon" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.5074 7.11334C20.743 7.00572 21.5811 6.41271 21.9036 5.60809C21.4579 5.89714 20.0743 6.21227 19.3102 5.91215C19.2728 5.72262 19.231 5.54258 19.1899 5.38005C18.6077 3.12304 16.6142 1.3047 14.5254 1.52437C14.6944 1.45233 14.8658 1.38527 15.0367 1.32506C15.2666 1.23812 16.6156 1.00642 16.4031 0.503749C16.2241 0.061612 14.576 0.837889 14.2657 0.939352C14.6753 0.776709 15.3528 0.496945 15.4254 0C14.7978 0.0908789 14.1817 0.404122 13.7056 0.859596C13.8775 0.664285 14.0079 0.426261 14.0356 0.170094C12.3617 1.29903 11.3838 3.57506 10.5925 5.78288C9.97117 5.14716 9.42045 4.64654 8.9264 4.36856C7.54042 3.58391 5.88325 2.76524 3.28187 1.74576C3.20202 2.65439 3.70753 3.86254 5.16414 4.66598C4.84856 4.62138 4.27144 4.7209 3.80988 4.83759C3.99785 5.87851 4.61174 6.73611 6.27366 7.15081C5.51416 7.20373 5.12164 7.38619 4.7659 7.77946C5.11182 8.50341 5.95593 9.35545 7.47439 9.18055C5.78617 9.94873 6.78602 11.3713 8.15973 11.1591C5.81629 13.7145 2.1216 13.5267 0 11.3894C5.53937 19.358 17.5807 16.102 19.3751 8.42673C20.7196 8.43883 21.5099 7.93508 22 7.37971C21.2254 7.51849 20.1027 7.37507 19.5074 7.11334Z" fill="#A07B50"/>
+        </svg>
+      </a>
+      <a class="footer-social__link footer-social__vk" href="#">
+        <svg class="footer-icon" width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24.7772 12.4871C24.71 12.3767 24.2943 11.4902 22.2942 9.66827C20.2003 7.76041 20.4815 8.0702 23.0036 4.77132C24.5397 2.76224 25.1538 1.53532 24.9616 1.01081C24.7787 0.510836 23.649 0.64273 23.649 0.64273L19.8924 0.664201C19.8924 0.664201 19.6143 0.627393 19.4065 0.748552C19.2049 0.868177 19.0752 1.14423 19.0752 1.14423C19.0752 1.14423 18.4798 2.69936 17.686 4.02136C16.0125 6.81108 15.3421 6.95831 15.0686 6.785C14.4327 6.38165 14.592 5.1624 14.592 4.29742C14.592 1.59359 15.0093 0.46636 13.7779 0.174966C13.3685 0.0783461 13.0685 0.0139328 12.0231 0.00319722C10.6824 -0.0106056 9.54636 0.00779816 8.90413 0.316062C8.47597 0.521571 8.14626 0.980134 8.34784 1.00621C8.59629 1.03841 9.15883 1.15497 9.45729 1.55372C9.84326 2.06749 9.8292 3.22386 9.8292 3.22386C9.8292 3.22386 10.0511 6.40619 9.31197 6.80187C8.80412 7.07333 8.10876 6.51968 6.61646 3.98762C5.85234 2.69169 5.27417 1.25772 5.27417 1.25772C5.27417 1.25772 5.16323 0.990869 4.96478 0.848239C4.72413 0.674937 4.38661 0.619725 4.38661 0.619725L0.814471 0.641196C0.814471 0.641196 0.278494 0.656533 0.0816048 0.885047C-0.093408 1.08902 0.0675413 1.50924 0.0675413 1.50924C0.0675413 1.50924 2.86462 7.93064 6.03048 11.1682C8.93538 14.1358 12.2325 13.941 12.2325 13.941H13.7264C13.7264 13.941 14.178 13.8919 14.4077 13.6481C14.6202 13.4242 14.6124 13.004 14.6124 13.004C14.6124 13.004 14.5827 11.0363 15.514 10.7464C16.4312 10.4612 17.6095 12.6482 18.858 13.4901C19.8018 14.1266 20.519 13.987 20.519 13.987L23.8584 13.941C23.8584 13.941 25.6054 13.8352 24.7772 12.4871Z" fill="#A07B50"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer__text text">
+      <div class="footer-address footer__address">
+        <p class="footer-address__text">Новосибирск, Пушкинский проспект, 19</p>
+      </div>
+      <div class="footer-tel footer__tel">
+        <p class="footer-tel__number">+7 (383) 900-64-65</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
