@@ -1,22 +1,27 @@
-let i=1;
-for (let galleryItem of document.querySelectorAll('.gallery__item')) {
-  galleryItem.style.position = 'relative';
-  galleryItem.insertAdjacentHTML('beforeend', <span style="position:absolute; left:0;top:0">${i}</span>);
-  i++
-}
+window.addEventListener('load', function () {
+  const buttonLeft = document.querySelector('.gallery__button_left');
+  const buttonRight = document.querySelector('.gallery__button_right');
+  const galleryList = document.querySelector('.gallery__list');
+  let galleryItem = document.querySelectorAll('.gallery__item');
 
-let width = 234;
-let count = 1;
+  let counter = 0;
 
-let list = document.querySelector('.gallery__list');
-let listElems = document.querySelector('.gallery__item');
+  buttonRight.addEventListener('click', function() {
+    const stepSize  = galleryItem[0].clientWidth;
+    if(counter >= galleryItem.length-1) {
+      counter = -1;
+    };
+    galleryList.classList.add('gallery-transform-animation');
+    counter++;
+    galleryList.style.transform = 'translateX(' + `${-stepSize * counter}` + 'px)';
+  });
 
-let position = 0;
-
-document.querySelector('.gallery__button_left').onclick = function() {
-  position += width * count;
-}
-
-document.querySelector('.gallery__button_right').onclick = function() {
-  position -= width * count;
-}
+  buttonLeft.addEventListener('click', function() {
+    if(counter <= 0) {
+      counter = galleryItem.length;
+    };
+    galleryList.classList.add('gallery-transform-animation');
+    counter--;
+    galleryList.style.transform = 'translateX(' + `${-stepSize * counter}` + 'px)';
+  });
+});

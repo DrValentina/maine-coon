@@ -74,29 +74,29 @@
         <div id="gallery__cats" class="gallery__cats">
           <button class="gallery__button_left button-arrow button-arrow_left" type="button" name="button"></button>
           <div class="gallery__container">
-          <ul class="gallery__list">
-            <li class="gallery__item img-white-cat">
-              <picture class="gallery__img">
-                <source media="(min-width: 1366px)" srcset="source/img/png/gallery_cat_white_desktop.png, source/img/png/gallery_cat_white_desktop@2x.png 2x" width="517" height="214">
-                <source media="(min-width: 768px)" srcset="source/img/png/gallery_cat_white_tablet.png, source/img/png/gallery_cat_white_tablet@2x.png 2x" width="469" height="198">
-                <img class="gallery__img-cat" src="source/img/png/gallery_cat_white_mobile.png" srcset="source/img/png/gallery_cat_white_mobile@2x.png 2x" alt="Белая кошка" width="519" height="214">
-              </picture>
-            </li>
-            <li class="gallery__item img-colorful-cat">
-              <picture class="gallery__img">
-                <source media="(min-width: 1366px)" srcset="source/img/png/gallery_cat_colorful_desktop.png, source/img/png/gallery_cat_colorful_desktop@2x.png 2x" width="519" height="241">
-                <source media="(min-width: 768px)" srcset="source/img/png/gallery_cat_colorful_tablet.png, source/img/png/gallery_cat_colorful_tablet@2x.png 2x" width="418" height="198">
-                <img class="gallery__img-cat" src="source/img/png/gallery_cat_colorful_mobile.png" srcset="source/img/png/gallery_cat_colorful_mobile@2x.png 2x" alt="Разноцветная кошка" width="521" height="214">
-              </picture>
-            </li>
-            <li class="gallery__item img-gray-cat">
-              <picture class="gallery__img">
-                <source media="(min-width: 1366px)" srcset="source/img/png/gallery_cat_gray_desktop.png, source/img/png/gallery_cat_gray_desktop@2x.png 2x" width="429" height="485">
-                <source media="(min-width: 768px)" srcset="source/img/png/gallery_cat_gray_tablet.png, source/img/png/gallery_cat_gray_tablet@2x.png 2x" width="474" height="547">
-                <img class="gallery__img-cat" src="source/img/png/gallery_cat_gray_mobile.png" srcset="source/img/png/gallery_cat_gray_mobile@2x.png 2x" alt="Серая кошка" width="234" height="248">
-              </picture>
-            </li>
-          </ul>
+            <ul class="gallery__list">
+              <li class="gallery__item img-white-cat">
+                <picture class="gallery__img">
+                  <source media="(min-width: 1366px)" srcset="source/img/png/gallery_cat_white_desktop.png, source/img/png/gallery_cat_white_desktop@2x.png 2x" width="517" height="214">
+                  <source media="(min-width: 768px)" srcset="source/img/png/gallery_cat_white_tablet.png, source/img/png/gallery_cat_white_tablet@2x.png 2x" width="469" height="198">
+                  <img class="gallery__img-cat gallery__img-cat--white" src="source/img/png/gallery_cat_white_mobile.png" srcset="source/img/png/gallery_cat_white_mobile@2x.png 2x" alt="Белая кошка" width="519" height="214">
+                </picture>
+              </li>
+              <li class="gallery__item img-colorful-cat">
+                <picture class="gallery__img">
+                  <source media="(min-width: 1366px)" srcset="source/img/png/gallery_cat_colorful_desktop.png, source/img/png/gallery_cat_colorful_desktop@2x.png 2x" width="519" height="241">
+                  <source media="(min-width: 768px)" srcset="source/img/png/gallery_cat_colorful_tablet.png, source/img/png/gallery_cat_colorful_tablet@2x.png 2x" width="418" height="198">
+                  <img class="gallery__img-cat gallery__img-cat--colorful" src="source/img/png/gallery_cat_colorful_mobile.png" srcset="source/img/png/gallery_cat_colorful_mobile@2x.png 2x" alt="Разноцветная кошка" width="521" height="214">
+                </picture>
+              </li>
+              <li class="gallery__item img-gray-cat">
+                <picture class="gallery__img">
+                  <source media="(min-width: 1366px)" srcset="source/img/png/gallery_cat_gray_desktop.png, source/img/png/gallery_cat_gray_desktop@2x.png 2x" width="429" height="485">
+                  <source media="(min-width: 768px)" srcset="source/img/png/gallery_cat_gray_tablet.png, source/img/png/gallery_cat_gray_tablet@2x.png 2x" width="474" height="547">
+                  <img class="gallery__img-cat gallery__img-cat--gray" src="source/img/png/gallery_cat_gray_mobile.png" srcset="source/img/png/gallery_cat_gray_mobile@2x.png 2x" alt="Серая кошка" width="234" height="248">
+                </picture>
+              </li>
+            </ul>
           </div>
           <button class="gallery__button_right button-arrow button-arrow_right" type="button" name="button"></button>
         </div>
@@ -233,9 +233,9 @@
         <div class="questions__container questions-container">
           <div class="question quastions-container__question question__first">
             <p class="question__text">С какого возраста можно забрать котенка из питомника?</p>
-            <button class="question__button question__button_open" type="button" name="button"></button>
+            <button class="question__button" type="button" name="button"></button>
           </div>
-          <div class="questions-container__answer answer_open">
+          <div class="questions-container__answer visually-hidden">
             <p class="questions-container__answer-text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
             <p class="questions-container__answer-text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
           </div>
@@ -243,28 +243,28 @@
         <div class="questions__container questions-container question__second">
           <div class="question questions-container__question">
             <p class="question__text">Как зарезервировать котенка?</p>
-            <button class="question__button question__button_close" type="button" name="button"></button>
+            <button class="question__button" type="button" name="button"></button>
           </div>
-          <div class="questions-container__answer answer_close">
-            <p class="questions-container__answer-text"></p>
+          <div class="questions-container__answer visually-hidden">
+            <p class="questions-container__answer-text">Зарезервировать можно следующим способом: ...</p>
           </div>
         </div>
         <div class="questions__container questions-container question__third">
           <div class="question quastions-container__question">
             <p class="question__text">Можно ли купить кота, если я живу в другом городе?</p>
-            <button class="question__button question__button_close" type="button" name="button"></button>
+            <button class="question__button" type="button" name="button"></button>
           </div>
-          <div class="questions-container__answer answer_close">
-            <p class="questions-container__answer-text"></p>
+          <div class="questions-container__answer visually-hidden">
+            <p class="questions-container__answer-text">Конечно можно, Вы можете приехать и забрать его...</p>
           </div>
         </div>
         <div class="questions__container questions-container question__fourth">
           <div class="question questions-container__question">
             <p class="question__text">Как подготовить дом к приему нового питомца?</p>
-            <button class="question__button question__button_close" type="button" name="button"></button>
+            <button class="question__button" type="button" name="button"></button>
           </div>
-          <div class="questions-container__answer answer_close">
-            <p class="questions-container__answer-text"></p>
+          <div class="questions-container__answer visually-hidden">
+            <p class="questions-container__answer-text">Для Вашего нового друга нужны будут следующие приготовления: ...</p>
           </div>
         </div>
       </div>
@@ -331,6 +331,7 @@
       </div>
     </div>
   </footer>
+  <script src="source/script/questions.js"></script>
   <script src="source/script/carousel.js"></script>
 </body>
 </html>

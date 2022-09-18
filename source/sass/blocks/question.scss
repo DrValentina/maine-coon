@@ -46,16 +46,46 @@
   border-left: 1px solid $brown;
   border-collapse: collapse;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
   @media (min-width: $tablet-width) {
     width: 73px;
   }
+  @media(min-width: $desktop-width) {
+    width: 104px;
+  }
+  &::before {
+    content: '+';
+    position: relative;
+    font-family: $roboto, 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: $basic-beige;
+    @media(min-width: $tablet-width) {
+      font-size: 40px;
+    }
+    @media(min-width: $desktop-width) {
+      font-size: 50px;
+    }
+  }
+}
+.active {
+  background-color:$basic-beige;
+  &::before {
+    content: '—';
+    color: $basic-white;
+    font-size: 20px;
+    @media(min-width: $tablet-width) {
+      font-size: 30px;
+    }
+    @media(min-width: $desktop-width) {
+      font-size: 40px;
+    }
+  }
 }
 
-.answer_close {
-  display: none;
-}
-
-.question__button_open {
+/*.question__button_close {
   background-color:$basic-beige;
   cursor: pointer;
   &::before {
@@ -71,7 +101,7 @@
   }
 }
 
-.question__button_open:hover {
+.question__button_close:hover {
   &::before {
     content: "—";
     position: relative;
@@ -82,7 +112,7 @@
   }
 }
 
-.question__button_open:active{
+.question__button_close:active{
   &::before {
     content: "—";
     position: relative;
@@ -93,7 +123,7 @@
   }
 }
 
-.question__button_close {
+.question__button_open {
   background-color:transparent;
   cursor: pointer;
   &::before {
@@ -108,7 +138,7 @@
   }
 }
 
-.question__button_close:hover {
+.question__button_open:hover {
   &::before {
     content: "+";
     position: relative;
@@ -121,7 +151,7 @@
   }
 }
 
-.question__button_close:active {
+.question__button_open:active {
   &::before {
     content: "+";
     position: relative;
@@ -133,7 +163,7 @@
     text-align: center;
   }
 }
-
+*/
 .question__first {
   @media (min-width: $tablet-width) {
   position: relative;

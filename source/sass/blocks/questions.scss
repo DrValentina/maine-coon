@@ -51,6 +51,7 @@
   padding: 0;
   border: 1px solid $brown;
   border-collapse: collapse;
+  display: block;
   @media (min-width: $tablet-width) {
     width: 553px;
     margin: 0;
